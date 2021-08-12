@@ -1,0 +1,195 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #3fc2a3;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+}
+.title{
+    text-align: center;
+    margin-top: 2%;
+    font-weight: normal;
+    border-bottom: .8px solid #b2b2b3;; 
+}
+.contenedor {
+	margin-left: auto;
+    margin-right: auto;
+	width: 400px;
+	margin-top: 40px;
+	
+}
+
+.formulario .contenedor-inputs{
+	padding: 20px;
+	background: #f2f2f2;
+	border-radius:6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	border:none;
+	border-bottom: 2px solid #1B2845;;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+	background-color: #f2f2f2;
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus {
+	border-bottom: 2px solid #246eb9;
+}
+
+
+.formulario input[type="radio"]{
+	display: none;
+}
+
+.formulario .sexo {
+	display: flex;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+	margin-bottom: 20px;
+	
+}
+
+.formulario .sexo .label-radio {
+	width: 49.5%;
+	cursor: grabbing;
+}
+
+.formulario .sexo .hombre {
+	border-radius: 3px 0 0 3px;
+}
+
+.formulario .sexo .mujer {
+	border-radius: 0 3px 3px 0;
+}
+
+.formulario .label-radio{
+	background: rgba(26, 116, 108, 0.4);
+	color: #fff;
+	padding:10px 10px;
+	text-align: center;
+}
+
+.formulario input[type="radio"]:checked + .label-radio{
+	background: #404E4D;
+	color: #fff;
+}
+
+
+.formulario .terminos {
+	text-align: center;
+	color: #424242;
+}
+
+.formulario .terminos label {
+	margin-left: 10px;
+}
+
+
+.formulario .error{
+	display: none;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #ce1818;
+	color: #fff;
+	padding: 15px 10px;
+	padding-left: 40px;
+}
+
+.formulario .correcto{
+	display: none;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #42921c;
+	color: #fff;
+	padding: 15px 10px;
+	padding-left: 40px;
+}
+
+.formulario .btn {
+	width: 100%;
+	text-align: center;
+	background: #335C81;
+	color: #fff;
+	border: none;
+	display: block;
+	padding: 15px 10px;
+	cursor: pointer;
+	border-radius: 0 0 6px 6px;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+}
+
+.formulario .btn:hover {
+	background: #1B2845;
+}
+
+
+/********** MEDIA QUERIES **********/
+
+@media screen and (max-width: 1280px) {
+	
+    .contenedor {
+		width: 55% ;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+ 		font-size: 24px;
+    }
+    .formulario .terminos {
+		font-size: 24px;
+	}
+    .formulario .btn {
+		font-size: 24px;
+    }
+}
+@media screen and (max-width: 800px) {
+	.contenedor {
+		width: 65% ;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+        width: 98%;
+		padding: 15px 10px;
+        margin-right: 15px;
+		font-family: 'Slabo 27px', serif;
+		font-size: 22px;
+    }
+    .formulario .terminos {
+		font-size: 20px;
+	}
+    .formulario .btn {
+        width: 100%;
+        margin-bottom: 15px;
+		font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+	.contenedor {
+		width: 70% ;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+		padding: 10px 10px;
+		font-size: 18px;
+    }
+
+    .formulario .terminos {
+		font-size: 18px;
+	}
+    .formulario .btn {
+		font-size: 18px;
+    }
+}
+ 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario Web</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="contenedor-inputs">
+                    <h3 class="title"><i>Formulario Responsive</i></h3>
+					<input type="text"  name="nombre" placeholder="Nombre" >
+					<input type="text" name="apellido" placeholder="Apellido" >
+					<input type="email" name="correo" placeholder="Correo" >
+					
+					<div class="sexo">
+						<input type="radio" name="sexo" id="hombre" value="hombre" >
+						<label for="hombre" class="label-radio hombre">Hombre</label>
+						
+						<input type="radio" name="sexo" id="mujer" value="mujer" >
+						<label for="mujer" class="label-radio mujer">Mujer</label>
+					</div>
+					
+					<div class="terminos">
+						<input type="checkbox" name="terminos" id="terminos" >
+						<label for="terminos">Acepto Terminos y Condiciones</label>
+					</div>
+					
+					<ul class="error" id="error"></ul>
+				</div>
+				
+				<input type="submit" id="btn" class="btn" value="Registrarse">
+				
+				<p class="correcto" id="correcto"><i>Registro realizado exitosamente, redireccionando en 5 segundos.</i></p>
+			</form>
+		</div>
+
+
+    <script src="formulario.js"></script>
+</body>
+</html>
