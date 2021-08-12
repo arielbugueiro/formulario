@@ -1,6 +1,6 @@
 # Proyecto Formulario Web
 
-Este proyecto se trata de un formulario adaptado a dispositivos móviles, el cual te estan realizadas todas las validaciones de los input y una vez completados los campos redirecciona al mismo formulario pasado los 5 segundos.
+Este proyecto se trata de un formulario adaptado a dispositivos móviles, en el cual están realizadas todas las validaciones de los input y una vez completados los campos redirecciona al mismo formulario pasado los 5 segundos.
 
 
 <p align="center">
